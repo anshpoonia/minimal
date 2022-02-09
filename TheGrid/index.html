@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Grid</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .body{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            transition-duration: 1s;
+        }
+        .body div{
+            height: 5%;
+            width: 5%;
+            background-color: wheat;
+        }
+    </style>
+</head>
+<body>
+<div class="body">
+
+</div>
+<script>
+const body = document.querySelector(".body");
+const colors = [];
+const count = 400;
+for(let i = 0 ; i < 400 ; i++)
+{
+    const div = document.createElement('div');
+    body.appendChild(div);
+}
+
+const elements = document.querySelector('.body').querySelectorAll('div');
+console.log(elements)
+
+for(let i = 0; i < 20; i++)
+{
+    const temp = [
+        Math.floor(Math.random()*256),
+        Math.floor(Math.random()*256),
+        Math.floor(Math.random()*256),
+    ]
+    colors.push(temp);
+}
+
+for(let i = 20; i < (400 + count); i++)
+{
+    const temp = [
+        (colors[i-1][0]+colors[i-20][0])/2,
+        (colors[i-1][1]+colors[i-20][1])/2,
+        (colors[i-1][2]+colors[i-20][2])/2,
+    ]
+    colors.push(temp);
+}
+console.log(colors)
+
+for(let i = count; i < (400 + count); i++)
+{
+    elements[i-count].style.backgroundColor = `rgb( ${colors[i][0]}, ${colors[i][1]}, ${colors[i][2]})`;
+}
+
+
+</script>
+</body>
+</html>

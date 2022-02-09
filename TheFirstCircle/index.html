@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The First Circle</title>
+    <link rel="icon" href="logo.png">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: 10px;
+        }
+
+        .body{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+        }
+
+        .holder1{
+            height: 10rem;
+            animation-duration: 1s;
+        }
+        
+        .holder2{
+            height: 20rem;
+        }
+
+        .holder3{
+            height: 40rem;
+        }
+
+        .holder4{
+            height: 64rem;
+        }
+
+        .holder5{
+            height: 100rem;
+        }
+
+        /*circle sizes*/
+        .circle1{
+            height: 2rem;
+            width: 2rem;
+            border-radius: 2rem;
+        }
+
+        .circle2{
+            height: 4rem;
+            width: 4rem;
+            border-radius: 4rem;
+        }
+
+        .circle3{
+            height: 7rem;
+            width: 7rem;
+            border-radius: 7rem;
+        }
+
+        .circle4{
+            height: 9rem;
+            width: 9rem;
+            border-radius: 9rem;
+        }
+
+        .circle5{
+            height: 13rem;
+            width: 13rem;
+            border-radius: 13rem;
+        }
+
+        /*color profiles*/
+        .color1{
+            background-color: #7d3865;
+        }
+        
+        .color2{
+            background-color: #cd8b62;
+        }
+
+        .color3{
+            background-color: #f7efd2;
+        }
+
+        .color4{
+            background-color: #eed7a1;
+        }
+
+        .color5{
+            background-color: #8a8583;
+        }
+
+        .color6{
+            background-color: #475c6c;
+        }
+
+        /*angles*/
+        .angle1{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform:translate(-50%, -50%) rotate(0deg);
+            animation: rotate1 infinite linear forwards;
+        }
+
+        .angle2{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform:translate(-50%, -50%) rotate(51deg);
+            animation: rotate2 5s infinite linear forwards;
+        }
+
+        .angle3{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform:translate(-50%, -50%) rotate(103deg);
+            animation: rotate3 5s infinite linear forwards;
+        }
+
+        .angle4{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform:translate(-50%, -50%) rotate(154deg);
+            animation: rotate4 5s infinite linear forwards;
+        }
+
+        .angle5{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform:translate(-50%, -50%) rotate(206deg);
+            animation: rotate5 5s infinite linear forwards;
+        }
+
+        .angle6{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform:translate(-50%, -50%) rotate(257deg);
+            animation: rotate6 5s infinite linear forwards;
+        }
+
+        .angle7{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform:translate(-50%, -50%) rotate(309deg);
+            animation: rotate7 5s infinite linear forwards;
+        }
+
+        @keyframes rotate1 {
+            0%{
+                transform:translate(-50%, -50%) rotate(0deg);
+            }
+            100%{
+                transform:translate(-50%, -50%) rotate(360deg);
+            }
+        }
+
+        @keyframes rotate2 {
+            0%{
+                transform:translate(-50%, -50%) rotate(51deg);
+            }
+            100%{
+                transform:translate(-50%, -50%) rotate(411deg);
+            }
+        }
+
+        @keyframes rotate3 {
+            0%{
+                transform:translate(-50%, -50%) rotate(103deg);
+            }
+            100%{
+                transform:translate(-50%, -50%) rotate(463deg);
+            }
+        }
+
+        @keyframes rotate4 {
+            0%{
+                transform:translate(-50%, -50%) rotate(154deg);
+            }
+            100%{
+                transform:translate(-50%, -50%) rotate(514deg);
+            }
+        }
+
+        @keyframes rotate5 {
+            0%{
+                transform:translate(-50%, -50%) rotate(206deg);
+            }
+            100%{
+                transform:translate(-50%, -50%) rotate(566deg);
+            }
+        }
+
+        @keyframes rotate6 {
+            0%{
+                transform:translate(-50%, -50%) rotate(257deg);
+            }
+            100%{
+                transform:translate(-50%, -50%) rotate(617deg);
+            }
+        }
+
+        @keyframes rotate7 {
+            0%{
+                transform:translate(-50%, -50%) rotate(309deg);
+            }
+            100%{
+                transform:translate(-50%, -50%) rotate(669deg);
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="body">
+    <div class="  holder1 angle1">
+        <div class="circles circle1 color1"></div>
+    </div>
+    <div class="  holder1 angle2">
+        <div class="circles circle1 color1"></div>
+    </div>
+    <div class="  holder1 angle3">
+        <div class="circles circle1 color1"></div>
+    </div>
+    <div class="  holder1 angle4">
+        <div class="circles circle1 color1"></div>
+    </div>
+    <div class="  holder1 angle5">
+        <div class="circles circle1 color1"></div>
+    </div>
+    <div class="  holder1 angle6">
+        <div class="circles circle1 color1"></div>
+    </div>
+    <div class="  holder1 angle7">
+        <div class="circles circle1 color1"></div>
+    </div>
+
+    <div class="  holder2 angle1">
+        <div class="circles circle2 color2"></div>
+    </div>
+    <div class="  holder2 angle2">
+        <div class="circles circle2 color2"></div>
+    </div>
+    <div class="  holder2 angle3">
+        <div class="circles circle2 color2"></div>
+    </div>
+    <div class="  holder2 angle4">
+        <div class="circles circle2 color2"></div>
+    </div>
+    <div class="  holder2 angle5">
+        <div class="circles circle2 color2"></div>
+    </div>
+    <div class="  holder2 angle6">
+        <div class="circles circle2 color2"></div>
+    </div>
+    <div class="  holder2 angle7">
+        <div class="circles circle2 color2"></div>
+    </div>
+
+    <div class="  holder3 angle1">
+        <div class="circles circle3 color3"></div>
+    </div>
+    <div class="  holder3 angle2">
+        <div class="circles circle3 color3"></div>
+    </div>
+    <div class="  holder3 angle3">
+        <div class="circles circle3 color3"></div>
+    </div>
+    <div class="  holder3 angle4">
+        <div class="circles circle3 color3"></div>
+    </div>
+    <div class="  holder3 angle5">
+        <div class="circles circle3 color3"></div>
+    </div>
+    <div class="  holder3 angle6">
+        <div class="circles circle3 color3"></div>
+    </div>
+    <div class="  holder3 angle7">
+        <div class="circles circle3 color3"></div>
+    </div>
+
+    <div class="  holder4 angle1">
+        <div class="circles circle4 color4"></div>
+    </div>
+    <div class="  holder4 angle2">
+        <div class="circles circle4 color4"></div>
+    </div>
+    <div class="  holder4 angle3">
+        <div class="circles circle4 color4"></div>
+    </div>
+    <div class="  holder4 angle4">
+        <div class="circles circle4 color4"></div>
+    </div>
+    <div class="  holder4 angle5">
+        <div class="circles circle4 color4"></div>
+    </div>
+    <div class="  holder4 angle6">
+        <div class="circles circle4 color4"></div>
+    </div>
+    <div class="  holder4 angle7">
+        <div class="circles circle4 color4"></div>
+    </div>
+
+    <div class="  holder5 angle1">
+        <div class="circles circle5 color5"></div>
+    </div>
+    <div class="  holder5 angle2">
+        <div class="circles circle5 color5"></div>
+    </div>
+    <div class="  holder5 angle3">
+        <div class="circles circle5 color5"></div>
+    </div>
+    <div class="  holder5 angle4">
+        <div class="circles circle5 color5"></div>
+    </div>
+    <div class="  holder5 angle5">
+        <div class="circles circle5 color5"></div>
+    </div>
+    <div class="  holder5 angle6">
+        <div class="circles circle5 color5"></div>
+    </div>
+    <div class="  holder5 angle7">
+        <div class="circles circle5 color5"></div>
+    </div>
+
+
+</div>
+</body>
+</html>
