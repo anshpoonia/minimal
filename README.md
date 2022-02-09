@@ -1,0 +1,2 @@
+# minimal
+Minimalistic looking pages
