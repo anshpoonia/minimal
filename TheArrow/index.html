@@ -10,6 +10,7 @@
             padding: 0;
             box-sizing: border-box;
             font-size: 10px;
+            font-family: sans-serif;
         }
         .body{
             position: absolute;
@@ -23,17 +24,27 @@
         .body svg{
             transform: rotate(180deg);
         }
+
+        #click{
+            position: fixed;
+            bottom: 2rem;
+            color: wheat;
+            left: 50%;
+            transform: translateX(-50%);
+        }
     </style>
 </head>
 <body>
 <div class="body">
     <svg height="3rem" id="arrow" viewBox="0 0 512 512" width="5rem" xmlns="http://www.w3.org/2000/svg"><polygon points="396.6,160 416,180.7 256,352 96,180.7 115.3,160 256,310.5 " fill="wheat"/></svg>
 </div>
+<div id="click">Click</div>
 <audio id="audio" loop><source src="beats.mp3" type="audio/mp3"></audio>
 <script>
     document.addEventListener("click", playMusic);
     function playMusic()
     {
+        document.getElementById("click").remove();
         document.getElementById("audio").play();
         document.removeEventListener("click", playMusic);
     }
