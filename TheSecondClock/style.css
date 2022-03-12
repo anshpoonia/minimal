@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+    color: rgb(200,200,200);
+}
+
+.body{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(10,10,10);
+}
+
+.seconds{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.minute{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.hour{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.seconds-spoke{
+    position: absolute;
+    width: 30rem;
+    transition-duration: 500ms;
+
+}
+
+.minute-spoke{
+    position: absolute;
+    width: 40rem;
+    transition-duration: 500ms;
+}
+
+.hour-spoke{
+    position: absolute;
+    width: 50rem;
+    transition-duration:500ms;
+}
