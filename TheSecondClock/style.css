@@ -6,47 +6,50 @@
     color: rgb(200,200,200);
 }
 
-.body{
+.holder{
     position: absolute;
     height: 100%;
     width: 100%;
     overflow: hidden;
     background-color: rgb(10,10,10);
+    display: grid;
+    align-items: center;
+    justify-content: center;
 }
 
 .seconds{
     position: absolute;
-    top: 50%;
-    left: 50%;
+    width: 40rem;
+    transform: translateX(50%);
 }
 
 .minute{
     position: absolute;
-    top: 50%;
-    left: 50%;
+    width: 40rem;
+    transform: translateX(50%);
 }
 
 .hour{
     position: absolute;
-    top: 50%;
-    left: 50%;
+    width: 40rem;
+    transform: translateX(50%);
 }
 
 .seconds-spoke{
     position: absolute;
-    width: 30rem;
+    width: calc(100% - 10rem);
     transition-duration: 500ms;
 
 }
 
 .minute-spoke{
     position: absolute;
-    width: 40rem;
+    width: 100%;
     transition-duration: 500ms;
 }
 
 .hour-spoke{
     position: absolute;
-    width: 50rem;
+    width: calc(100% + 10rem);
     transition-duration:500ms;
 }
